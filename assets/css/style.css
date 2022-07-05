@@ -29,7 +29,8 @@ footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    place-items: center;
+    place-items: center left;
+    padding-bottom: 10px;   
     padding-left: 10px;
 }
 
@@ -78,7 +79,11 @@ footer{
         display: block;
         align-items: center;
         justify-content: center;
-        margin: 10px;       
+        margin: 10px;     
+        font-size: smaller;  
+    }
+    .danzaTitulo{
+        font-size: smaller;
     }
 }
 
