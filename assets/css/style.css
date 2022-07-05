@@ -1,0 +1,86 @@
+
+header{  
+
+    background-color:  rgb(211, 171, 221);
+}
+
+main{
+    background-color:  rgb(211, 171, 221);
+}
+
+.barraNavegacion{
+    background-image: linear-gradient(to bottom,rgb(190, 87, 216), rgb(219, 164, 233));
+}
+
+footer{
+    grid-area: footer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-image: linear-gradient(to top, rgb(190, 87, 216), rgb(219, 164, 233));
+}
+
+.iconosRedes{
+    width: 15px;
+}
+
+.danza{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    place-items: center;
+    padding-left: 10px;
+}
+
+.danzaTitulo{
+    padding: 10px;
+    font-size: medium;
+    text-align: center;
+}
+
+.danzaTexto{
+    font-size: 15px;
+}
+
+@media (max-width:768px){
+
+    .danza{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        place-items: center;        
+    }
+
+    .danzaTitulo{
+        font-size: small;
+    }
+
+    .barraNavegacion ul li{
+        display: block;
+        padding: 6px;
+        font-size: small;
+        color: white;
+    }
+    
+    footer{
+        font-size: small;
+    }
+
+    .iconosRedes{
+        width: 10px;
+    }
+}
+
+@media (max-width:480px){
+
+    .danza{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;       
+    }
+}
+
+
+

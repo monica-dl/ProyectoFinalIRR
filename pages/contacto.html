@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instituto Rita Riso - Contacto</title>
+    <link rel="shortcut icon" href="../assets/images/iRR_2">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="container-fluid">
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-light barraNavegacion">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"> 
+            <img src="../assets/images/iRR - logo.png" alt="" width="60" height="30">  
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link" href="./quienesSomos.html">Quiénes somos</a>
+                <a class="nav-link" href="./danza.html">Danza</a>
+                <a class="nav-link" href="./artesEscenicas.html">Artes Escénicas</a>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <header>
+
+    </header>
+    
+    <main>
+        <form action="consulta.php" method="get" >
+            <fieldset class="formularioContacto">
+                    <legend>Hacenos tu consulta</legend>
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="apellido">Apellido: </label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ingresá tu apellido" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="genero">Seleccioná el género sobre el cual consultás:</label>
+                        <select name="genero" id="genero" >
+                            <option value="b">Ballet</option>
+                            <option value="j">Jazz</option>
+                            <option value="cm">Comedia Musical</option>
+                            <option value="c">Canto</option>
+                            <option value="t">Acrobacias en tela</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="correo">Correo electrónico: </label>
+                        <input type="email" name="correo" id="correo" placeholder="Ingresá tu dirección de correo electrónico" required>
+                    </div>                    
+                    <br>
+                    <div>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10">Escribí tu consulta</textarea>
+                    </div>    
+                    <br>
+                    <div>
+                        <input class="boton" type="submit" value="Enviar">
+                        <input class="boton" type="reset" value="Limpiar">
+                    </div>                                    
+            </fieldset>           
+        </form>
+            <div>
+                <h4>Visitanos en Alameda de la Federación 429 - Paraná, Entre Ríos</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13574.879280262421!2d-60.5330475!3d-31.7235477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7439cd8fe877b316!2sInstituto%20Rita%20Riso!5e0!3m2!1ses!2sar!4v1653998204302!5m2!1ses!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </main>
+
+        <footer>
+            <div>
+                <p> <b>iRR©</b> Todos los derechos reservados.</p>
+            </div>
+
+            <div>
+                <table class="tablaRedes">
+                    <tr>
+                        <td><img src="../assets/images/face-01.png" alt="facebook" class="iconoRedes"></td>
+                        <td>Instituto Rita Riso</td>
+                        <td><img src="../assets/images/insta-01.png" alt="instagram" class="iconoRedes"></td>
+                        <td>@institutoritariso</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/images/whatsapp.png" alt="whatsapp" class="iconoRedes"></td>
+                        <td>iRR whatsapp</td>
+                        <td><img src="../assets/images/phone.png" alt="whatsapp" class="iconoRedes"></td>
+                        <td>343 6 111222</td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
